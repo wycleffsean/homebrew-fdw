@@ -2,13 +2,13 @@ require 'formula'
 
 class PostgresqlMysqlFdw < Formula
   version '1.0'
-  homepage 'https://github.com/dpage/mysql_fdw'
-  url 'https://github.com/dpage/mysql_fdw/archive/4c48adf0f9770722484c8b8dc4d7699d87044c09.tar.gz'
-  sha256 '01e2fb8e94d55e983d43e21bfe5ba3d9119e6ef841855ce43e6410e007de8d10'
+  homepage 'https://github.com/EnterpriseDB/mysql_fdw'
+  url 'https://github.com/EnterpriseDB/mysql_fdw/archive/refs/tags/REL-2_9_1.tar.gz'
+  sha256 '26e8dc2012de6151450fbf2a5cd591a3d5b8a52b1e3ec0600b14a4a6b4a06b54'
 
-  depends_on :mysql
+  depends_on 'mysql'
   depends_on 'postgresql'
-  depends_on 'cmake' => :build
+  # depends_on 'cmake' => :build
 
   def postgresql
     # Follow the PostgreSQL linked keg back to the active Postgres installation
