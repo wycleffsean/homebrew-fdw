@@ -10,4 +10,8 @@ Just `brew tap wycleffsean/fdw` and then `brew install <formula>`. e.g.
 `brew install postgresql_mysql_fdw`
 
 If the formula conflicts with one from mxcl/master or another tap, you can
-`brew install hashrocket/fdw/<formula>`.
+`brew install wycleffsean/fdw/<formula>`.
+
+
+Testing:
+`brew install --debug --build-from-source mysql_fdw.rb`
